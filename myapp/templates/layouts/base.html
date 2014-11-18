@@ -1,0 +1,211 @@
+{% load static %}
+<!DOCTYPE html>
+  <head >
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>amoozesh</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+
+
+
+    <link href="{%  static 'style/bootstrap.css' %}" rel="stylesheet">
+    <!-- Font awesome icon -->
+    <link rel="stylesheet" href="{%  static 'style/font-awesome.css' %}">
+    <!-- jQuery UI -->
+    <link rel="stylesheet" href="{%  static 'style/jquery-ui.css' %}">
+    <!-- Calendar -->
+    <link rel="stylesheet" href="{%  static 'style/fullcalendar.css' %}">
+    <!-- prettyPhoto -->
+    <link rel="stylesheet" href="{%  static 'style/prettyphoto.css' %}">
+    <!-- Star rating -->
+    <link rel="stylesheet" href="{%  static 'style/rateit.css' %}">
+    <!-- Date picker -->
+    <link rel="stylesheet" href="{%  static 'style/bootstrap-datetimepicker.min.css' %}">
+    <!-- jQuery Gritter -->
+    <link rel="stylesheet" href="{%  static 'style/jquery.gritter.css"' %}">
+    <!-- CLEditor -->
+    <link rel="stylesheet" href="{%  static 'style/jquery.cleditor.css' %}">
+    <!-- Bootstrap toggle -->
+    <link rel="stylesheet" href="{%  static 'style/bootstrap-switch.css' %}">
+    <!-- Main stylesheet -->
+    <link href="{%  static 'style/style.css" rel="stylesheet' %}">
+    <!-- Widgets stylesheet -->
+    <link href="{%  static 'style/widgets.css" rel="stylesheet' %}">
+
+
+    <link href="{%  static '../../../fonts.googleapis.com/cssfamilyrochester.css rel=stylesheet type=text/css' %}">
+    <link href="{%  static '../../../fonts.googleapis.com/cssfamilyoswald.css rel=stylesheet type=text/css' %}">
+    <!-- Stylesheets -->
+    <link href="{%  static 'style/bootstrap.css" rel="stylesheet' %}">
+    <link href="{%  static 'style/prettyphoto.css" rel="stylesheet' %}">
+    <link href="{%  static 'style/slider.css" rel="stylesheet' %}">
+    <link href="{%  static 'stylesheet" href="style/font-awesome.css' %}">
+    <link href="{%  static 'stylesheet" href="style/font-awesome-ie7.css' %}">
+    <link href="{%  static 'style/style.css' %}">
+    <link href="{%  static 'style/bootstrap-responsive.css" rel="stylesheet' %}">
+
+
+    <link rel="shortcut icon" href="static/img/favicon/favicon.png">
+
+</head>
+
+  <body style="background-color:#b7d0e8"  >
+
+
+  <div class="topbar" dir="rtl" style="background-color:#005580">
+      <div class="container">
+          <div class="row">
+
+              <div class="span5 offset2 pull-right">
+                  <div class="links">
+                      |    <a href="/login">ورود</a>   |<a href="/register/">عضویت    |</a>                 </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <header>
+      <div class="container">
+          <div class="row">
+              <div class="span12">
+                  <div class="logo">
+                      <h1><a href="index.html">همیار کامپیوتر</a></h1>
+                      <p class="lmeta">حل مشکلات کامپیوتری در خانه</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </header>
+
+
+  <div class="container">
+      <div class="row">
+          <div class="span12">
+              <div class="navbar">
+                  <div class="navbar-inner">
+                      <div class="container">
+                          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                              <span>Menu</span>
+                          </a>
+                          <div class="nav-collapse collapse">
+                              <ul class="nav pull-right" dir="rtl">
+
+                                  <li><a href="service.html">درباره ما</a></li>
+                                  <li><a href="service.html">حل مشکلات کامپیوتری</a></li>
+                                  <li><a href="aboutus.html">طراحی سایت</a></li>
+
+                                  <li><a href="portfolio.html">کلاس های تابستان</a></li>
+                                  <li><a href="contactus.html">کتاب</a></li>
+                                  <li><a href="/">خانه</a></li>
+
+                              </ul>
+
+{#                              <form class="navbar-search">#}
+{#                                  <input type="text" class="search-query" placeholder="Search">#}
+{#                              </form>#}
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+<div class="container">
+
+      {% block content %}
+
+      {% endblock content %}
+</div>
+  <footer style="margin-top: -15px;background-color: #005580" >
+      <div class="container">
+          <div class="row">
+              <div class="span12">
+
+                  <div class="foot">
+                      <div class="row">
+                          <div class="span4">
+                              <!-- "fwidget" class is important -->
+                              <div class="fwidget">
+                                  <h4>Recent Posts</h4>
+                                  <ul>
+                                      <li><a href="#">Sed eu leo orci, condimentum gravida metus</a></li>
+                                      <li><a href="#">Etiam at nulla ipsum, in rhoncus purus</a></li>
+                                      <li><a href="#">Fusce vel magna faucibus felis dapibus facilisis</a></li>
+
+                                  </ul>
+                              </div>
+                          </div>
+                          <div class="span4">
+                              <div class="fwidget">
+                                  <h4>Subscribe</h4>
+                                  <p>Duis eget risus ac orci vulputate vestibulum sit amet id orci. Etiam ac ante at lorem ultrices elementum.</p>
+
+
+                              </div>
+                          </div>
+                          <div class="span2">
+                              <div class="fwidget">
+                                  <h4>Categories</h4>
+                                  <ul>
+                                      <li><a href="#">Condimentum</a></li>
+                                      <li><a href="#">Etiam at</a></li>
+                                      <li><a href="#">Fusce vel</a></li>
+                                  </ul>
+                              </div>
+                          </div>
+                          <div class="span2">
+                              <div class="fwidget">
+                                  <h4>Pages</h4>
+                                  <ul>
+                                      <li><a href="#">خانه</a></li>
+                                      <li><a href="#">درباره ما</a></li>
+                                      <li><a href="#">کتب اموزشی</a></li>
+                                  </ul>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+
+                               </div>
+          </div>
+
+      </div>
+  </footer>
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+
+    {%  block js %}
+        <script src="http://code.jquery.com/jquery-latest.js"></script>
+        <script src="{% static 'js/bootstrap.min.js'  %}"></script>
+
+        <!-- place project specific Javascript in this file -->
+        <script src="{%static 'js/project.js' %}"></script>
+
+
+
+
+        <script src="{% static 'js/custom.js' %}"></script>
+
+        <script src="{% static 'js/bootstrap.js' %}"></script>
+        <script src="{% static 'js/bootstrap.min.js' %}"></script>
+        <script src="{% static 'js/project.js' %}"></script>
+        <script src="{% static 'js/jquery.js' %}"></script>
+        <script src="{% static 'js/jquery.min.js' %}"></script>
+        <script src="{% static 'js/html5shim.js' %}"></script>
+        <script src="{% static 'js/jquery.isotope.js' %}"></script>
+        <script src="{% static 'js/jquery.prettyphoto.js' %}"></script>
+        <script src="{% static 'js/modernizr.custom.28468.js' %}"></script>
+        <script src="{% static 'js/jquery.cslider.js' %}"></script>
+
+        <script src="{% static 'js/custom.js' %}"></script>
+
+
+
+    {% endblock js %}
+  </body>
+</html>

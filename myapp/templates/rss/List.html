@@ -1,0 +1,60 @@
+{% extends "layouts/base.html" %}
+
+{% block page_title %}{% endblock %}
+
+{% block content %}
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2 pull-right">
+            <label>افزودن ار اس اس</label>
+            <form class="form" action="/list/" method="POST" >
+                {% csrf_token %}
+                لینک :<input type="text" name="L1">
+            <br><br>
+            خبرگذاری :<select name="L2">
+                <option>
+                    ایرنا
+                </option>
+                <option>
+                    فارس
+                </option>
+                <option>
+                    نیوز
+                </option>
+            </select>
+                <br><br>
+                گروه :<select name="L3">
+                <option>
+سیاسی
+                </option>
+                <option>
+ورزشی
+                </option>
+                <option>
+علمی
+                </option>
+            </select>
+                <br>
+                <br>
+                <input type="submit" value="ثبت"class="btn">
+                <br><br>
+            </form>
+        </div>
+    </div>
+    <div class="row">
+    <table class="table">
+        <tr><td>ردیف</td><td>خبرگزاری</td><td>گروه</td><td>لینک</td><td>گزینه ها</td></tr>
+
+        {% for i in RSSList %}
+            <tr>
+                <td> {{ j }} </td>
+                <td> {{ i.Agency }} </td>
+                <td> {{ i.Category }} </td>
+                <td> {{ i.Link }} </td>
+{#                <td> <a class="button" href="#">حذف</a> </td>#}
+            <td><a href="{% url 'myapp.views.rssdelete' i.Link %}"> حذف </a></td>
+            </tr>
+
+        {% endfor %}
+    </table>
+    </div>
+{% endblock content %}

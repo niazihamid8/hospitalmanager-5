@@ -1,0 +1,22 @@
+{% extends "layouts/base.html" %}
+
+{% block page_title %}{% endblock %}
+
+{% block content %}
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+            <table class="table table-bordered table-striped">
+
+                <tbody class="">
+                {% for i in News  %}
+
+                    <tr>
+                        <td>{{ i.title }} </td>
+                    </tr>
+
+                {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+{% endblock content %}
